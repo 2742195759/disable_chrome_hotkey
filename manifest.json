@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Disable keyboard shortcuts and run some scripts",
+  "version": "1.0.0",
+  "description": "Disable arbitrary keyboard shortcuts --- modified by xiongkun ",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "author": "xiongkun<xiongkun.03@bytedance.com>",
+  "background": {
+    "service_worker" : "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "commands": {
+    "C-W": { "description": "C-W" },
+    "C-S": { "description": "C-S" },
+    "C-N": { "description": "C-N" },
+    "do-nothing3": { "description": "Do nothing" },
+    "do-nothing4": { "description": "Do nothing" },
+    "do-nothing5": { "description": "Do nothing" },
+    "do-nothing6": { "description": "Do nothing" },
+    "do-nothing7": { "description": "Do nothing" },
+    "do-nothing8": { "description": "Do nothing" },
+    "do-nothing9": { "description": "Do nothing" }
+  },
+  "minimum_chrome_version": "33"
+}
